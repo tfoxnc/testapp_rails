@@ -3,14 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 
 group :assets do
-	gem 'jquery-rails'
 	gem 'sass-rails', 		'~> 5.0'
 	gem 'coffee-rails', 	'~> 4.1.0'
 	gem 'uglifier', 		'>= 1.3.0'
-
-	gem 'less-rails'
-	gem 'twitter-bootswatch-rails'
-	gem 'twitter-bootswatch-rails-helpers'
 end
 
 group :development do
@@ -20,6 +15,11 @@ group :development do
     gem 'capistrano-bundler', require: false
     gem 'capistrano3-puma',   require: false
 end
+
+gem 'jquery-rails'
+gem 'less-rails'
+gem 'twitter-bootswatch-rails'
+gem 'twitter-bootswatch-rails-helpers'
 
 gem 'puma'
 
