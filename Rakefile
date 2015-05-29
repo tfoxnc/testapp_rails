@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RmdTemplate::Application.load_tasks
+TestApp::Application.load_tasks

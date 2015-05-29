@@ -1,4 +1,4 @@
-RmdTemplate::Application.routes.draw do
+TestApp::Application.routes.draw do
   root :to => 'home#index'
 
   devise_for :users,

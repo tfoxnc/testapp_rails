@@ -9,9 +9,9 @@ if defined?(Bundler)
   Bundler.require(*Rails.groups(:assets => %w(development test)))
 end
 
-APP_NAME = 'RmdTemplate'
+APP_NAME = 'TestApp'
 
-module RmdTemplate
+module TestApp
   class Application < Rails::Application
     config.encoding = "utf-8"
     config.filter_parameters += [:password]
