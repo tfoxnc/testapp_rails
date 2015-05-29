@@ -1,28 +1,43 @@
-RMD Template
-============
+Test Rails App
+==============
 
-This is just basic Rails Template I made for myself. Rails 4, Mongoid 4, Devise and Unicorn pre-configured. Ready to push to Heroku. `mongoid.yml` is configured to use with Heroku's MongoHQ Addon.
+(For DigitalOcean Guide)
 
-Just do a mass-search-and-replace for **RmdTemplate** with whatever your app name is, and you're good to go.
+This Rails App has been fully configured with Nginx, Puma and Capistrano. This app isn't meant to be used 
+as a starting point for your Application, this is just an example to take help from.
 
-There might have been better ways do this, but I'm just too lazy to search for / learn them. 
+
+App Details
+-----------
+
+This app uses:
+
+ - __Ruby Version:__ `2.2.1`
+ - __Rails Version:__ `4.2.0`
+ - __Web Server:__ `Puma 2.11.1`
+ - __Database:__ `MongoDB`
+ - __Database Driver:__ `Mongoid 4.0.2`
+ - __Automation Tool:__ `Capistrano 3.4.0`
 
 
-Steps to follow:
-----------------
+Test Droplet Details
+--------------------
 
-Clone the app
+The Droplet where this App was hosted had:
 
-```
-$ git clone https://github.com/sheharyarn/rmd-template
-$ cd rmd-template
-```
+ - __Server IP:__ `178.62.88.94`
+ - __SSH Port:__ `7171`
+ - __User:__ `deploy`
+ - __App Name (For Capistrano):__ `testapp`
 
-Enter these commands to push and test your basic Rails app on Heroku
+In the DB Installation Step, I installed `MongoDB` since this app uses `Mongoid`.
 
-```
-$ heroku create
-$ heroku addons:add mongohq:sandbox
-$ heroku labs:enable user-env-compile
-$ git push heroku master
-```
+
+Testing on Your own Droplet
+---------------------------
+
+If you'd like to test this app on your own droplet, [fork](https://github.com/sheharyarn/testapp_rails/fork)
+this repo and follow the DigitalOcean Guide step-by-step replacing parameters (such as Droplet IP, SSH Port, User, etc.)
+with your Repo URL and Droplet's information.
+
+
